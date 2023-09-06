@@ -1,0 +1,19 @@
+n=371
+x=n
+d=0
+s=0
+if(n==0):
+    print("Invalid input")
+else:
+    while(x>0):
+        d+=1
+        x//=10
+    x=n
+    while(x>0):
+        y=x%10
+        s+=y**d
+        x//=10
+if(n==s):
+    print(True)
+else:
+    print(False)
