@@ -13,9 +13,11 @@ max=10
 print("Prime number upto 10")
 if(max==1):
     print(max)
+elif(max==0):
+    print("Invalid input")
 else:
     print(1,end=" ")
-    for i in range(max+1):
+    for i in range(2,max+1):
         if(Prime(i)):
             print(i,end=" ")
     
